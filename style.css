@@ -1,11 +1,11 @@
 #wrapper {
     width: 900px;
-    height: 500px;
+    min-height: 500px;
     margin: 5px auto;
     outline: 1px solid black;
 }
-#header {
-    height: 200px;
+header {
+    min-height: 200px;
     outline: 1px solid black;
     position: relative;   
 } 
@@ -16,32 +16,54 @@
     top: 10px;
     left: 10px;
 }
-#header h1 {
+header h1 {
     position: absolute;
     top: 50px;
     left: 250px;  
 }
 
-#left {
+aside {
     width: 200px;
     float:left;
-    height: 500px;
+    min-height: 500px;
     padding: 10px; 
 } 
-#left p {
+aside p {
     font-size: 12px;
     text-align: justify;
 }
-  
-#content {
-    height: 500px;
+ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+li {
+    list-style-type: none; 
+}
+
+main {
+    min-height: 500px;
     width: 650px;
     float: left;    
 }
 
-#content p {
+main p {
     font-size: 16px;
     text-align: justify;
     padding: 10px;
 } 
+.clearfix {
+    clear: both;
+}
+footer {
+    min-height: 80px;
+    outline: 1px solid black;
+    display: flex; 
+    align-items: flex-end;
+    position: relative;
+}
+footer div {
+    position: absolute;
+    left: 40%;
+} 
+
 
